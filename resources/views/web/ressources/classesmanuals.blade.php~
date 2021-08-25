@@ -1,0 +1,123 @@
+@extends('web.template.main')
+
+@section('title', __('classesmanuals.title-tab'))
+
+@section('style')
+    <link rel="stylesheet" href="{{ asset('web/plugins/dzsparallaxer/dzsparallaxer.css') }}">
+    <link rel="stylesheet" href="{{ asset('web/plugins/dzsparallaxer/dzsscroller/scroller.css') }}">
+    <link rel="stylesheet" href="{{ asset('web/plugins/dzsparallaxer/advancedscroller/plugin.css') }}">
+@endsection
+
+@section('content')
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}" style="margin-top: 6rem!important;">
+        <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero g-bg-black-opacity-0_3--after" style="height: 130%; background-image: url('{{ asset('web/img/aboutus/classesmanuals/digitalclassesmanualsbanner.jpg') }}'); transform: translate3d(0px, -78.0646px, 0px);"></div>
+        <div class="u-bg-overlay_iiner">
+            <div class="container g-color-white text-center g-bg-cover__inner g-py-170">
+                <h2 class="g-font-weight-700 g-font-size-40 g-font-size-70--md text-uppercase">{{ __('classesmanuals.title') }}</h2>
+                <p class="g-font-size-24">{{ __('cursosmanuales.sub-title') }}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5" id="go-to-content">
+        <div class="container">
+            <div class="text g-mb-70">
+               <h2 class="text-upercase g-ltext- ine-height-1 g-font-weight-700 g-font-size-35 g-mb-30 g-color-primary">{{ __('classesmanuals.content-title') }}</h2>
+               <p class="g-font-size-20 justified-content">{{ __('classesmanuals.content-text') }}</p>
+             </div>
+        </div>
+        <h4>La cooperativa digital agromakers capitalisa sobre la vida</h4>
+            <br>
+            <div class="media">
+                <div class="media-body">
+                    <iframe width="560" height="315" src="https://youtu.be/gr5UrOvJxfg" frameborder="0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <br>
+        <div class="container">
+            <div class="text g-mb-70">
+                <h2 class="text-upercase g-line-height-1 g-font-weight-700 g-font-size-35 g-mb-30 g-color-primary">{{ __('classesmanuals.content-title2') }}</h2>
+                <p class="g-font-size-20 justified-content">{{ __('classesmanuals.content-text2') }}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="post row">
+                <div class="post-sizer col-sm-1"></div>
+
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Permamandala.png/300px-Permamandala.png" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://es.wikipedia.org/wiki/Permacultura" target="_blank">{{ __('classesmanuals.permaculture-title') }}</a>
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">{{ __('classesmanuals.permaculture-text') }}</p>
+                        </div>
+                    </article>
+                </div> 
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="{{ asset('web/img/aboutus/classesmanuals/OpenClim.jpg') }}" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://github.com/sercami97/EstacionMeteorologica/wiki" target="_blank">{{ __('classesmanuals.openclim-title') }}
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">{{ __('classesmanuals.openclim-text') }}</p>
+                        </div>
+                    </article>
+                </div> 
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="https://2.bp.blogspot.com/_euq4iPQ9iQk/Sh3e9T8RCaI/AAAAAAAABE8/7Y4Xedj9PDM/s400/PW_Pic+%2358.JPG"  style="width: 100%;">
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="http://planetwhizbang.blogspot.com/">The most efficient implement yet designed for extensive garden cultivation</a>
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">The quote above comes from Eliot Coleman, and is found in his excellent book, The New Organic Grower.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+@endsection
+
+@section('script')
+    <script src="{{ asset('web/plugins/dzsparallaxer/dzsparallaxer.js') }}"></script>
+    <script src="{{ asset('web/plugins/dzsparallaxer/dzsscroller/scroller.js') }}"></script>
+    <script src="{{ asset('web/plugins/dzsparallaxer/advancedscroller/plugin.js') }}"></script>
+
+    <script src="{{ asset('web/plugins/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('web/plugins/masonry/dist/masonry.pkgd.min.js') }}"></script>
+
+    <script>
+        $(window).on('load', function() {
+            // initialization of masonry.js
+            $('.post').imagesLoaded().then(function () {
+                $('.post').masonry({
+                    columnWidth: '.post-sizer',
+                    itemSelector: '.post-item',
+                    percentPosition: true,
+                });
+            });
+        });
+    </script>
+@endsection
+
+@section('footer')
+    @include('web.template.footer')
+@endsection
+uppercase

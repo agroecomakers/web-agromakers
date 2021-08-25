@@ -1,0 +1,190 @@
+@extends('web.template.main')
+
+@section('title', __('hardware_production.title-tab'))
+
+@section('style')
+    <link rel="stylesheet" href="{{ asset('web/plugins/dzsparallaxer/dzsparallaxer.css') }}">
+    <link rel="stylesheet" href="{{ asset('web/plugins/dzsparallaxer/dzsscroller/scroller.css') }}">
+    <link rel="stylesheet" href="{{ asset('web/plugins/dzsparallaxer/advancedscroller/plugin.css') }}">
+@endsection
+
+@section('content')
+    <section class="dzsparallaxer auto-init height-is-based-on-content use-loading mode-scroll loaded dzsprx-readyall" data-options="{direction: 'reverse', settings_mode_oneelement_max_offset: '150'}" style="margin-top: 6rem!important;">
+        <div class="divimage dzsparallaxer--target w-100 u-bg-overlay g-bg-img-hero g-bg-black-opacity-0_3--after" style="height: 130%; background-image: url('{{ asset('web/img/ressources/hardware/Farmbot.jpg') }}'); transform: translate3d(0px, -78.0646px, 0px);"></div>
+        <div class="u-bg-overlay_iiner">
+            <div class="container g-color-white text-center g-bg-cover__inner g-py-170">
+                <h2 class="g-font-weight-700 g-font-size-40 g-font-size-70--md text-uppercase">{{ __('hardware_production.title') }}</h2>
+                <p class="g-font-size-24">{{ __('hardware_production.sub-title') }}</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-5" id="go-to-content">
+        <div class="container">
+            <div class="text-center g-mb-70">
+                <h2 class="text-uppercase g-line-height-1 g-font-weight-700 g-font-size-35 g-mb-30 g-color-primary">{{ __('hardware_production.content-title') }}</h2>
+                <p class="g-font-size-20 justified-content">{{ __('hardware_production.content-text') }}</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="post row">
+                <div class="post-sizer col-sm-1"></div>
+
+
+               <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                        <img class="img-fluid" src="{{ asset('web/img/aboutus/cooperative/OpenClim.jpg') }}" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://github.com/sercami97/EstacionMeteorologica/wiki" target="_blank">{{ __('cooperative.openclim-title') }}
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">{{ __('cooperative.openclim-text') }}</p>
+                        </div>
+                    </article>
+                </div>
+
+
+ 
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="https://cdata.oho.wiki/images/f/fd/MLK.684.3.jpg" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://farm.bot/#" target="_blank">{{ __('hardware_production.farmbot-title') }}</a>
+                                </h3>
+                            </header>
+                            <p class="g-mb-30">{{ __('hardware_production.farmbot-text') }}</p>
+                        </div>
+                    </article>
+                </div>
+                  <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="https://cdn.instructables.com/FQT/2DOL/J44FTRLB/FQT2DOLJ44FTRLB.LARGE.jpg?auto=webp&frame=1&width=839&height=1024&fit=bounds" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://www.instructables.com/id/IoT-Automatic-Plant-Watering-System/" target="_blank">IoT Automatic Plant Watering System</a>
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">This project inspiration came from my guinea pigs. Since I am too lazy to water their beloved wheat grass every day, I decided to make IoT automatic plant watering system which can be controlled through smartphone.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="https://2.bp.blogspot.com/_euq4iPQ9iQk/Sh3e9T8RCaI/AAAAAAAABE8/7Y4Xedj9PDM/s400/PW_Pic+%2358.JPG"  style="width: 100%;">
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="http://planetwhizbang.blogspot.com/">The most efficient implement yet designed for extensive garden cultivation</a>
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">The quote above comes from Eliot Coleman, and is found in his excellent book, The New Organic Grower.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="https://cdn.instructables.com/FKF/MZIL/HNM4CG9Y/FKFMZILHNM4CG9Y.LARGE.jpg?auto=webp&frame=1&width=600&height=1024&fit=bounds" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://www.instructables.com/id/RC-Robot-tractor/">RC Robot Tractor</a>
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">t is a motorized unit, electrical and radio controlled! This module is equipped with two 350w 24V motors supplied with two 12V batteries.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="https://pbs.twimg.com/media/EJh8ImWWkAEJKaz?format=jpg&name=medium" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://farmos.org/" target="_blank">FARMOS</a>
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">farmOS is a web-based application for farm management, planning, and record keeping. It is developed by a community of farmers, developers, researchers, and organizations with the aim of providing a standard platform for agricultural data collection and management.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="//cdn.shopify.com/s/files/1/1879/2549/t/37/assets/hero2020BuzzBoxMini-lg-min.png?v=18361057252554042456" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://www.osbeehives.com/">BuzzBox</a>
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">We are out of inventory, but new units will be available soon. Check back in August!</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="post-item col-md-6 col-lg-4 g-mb-30">
+                    <article class="g-bg-white">
+                        <img class="img-fluid" src="https://miro.medium.com/max/2993/1*T7U7qmIj0VFeYXeKExaQHg.jpeg" >
+
+                        <div class="u-shadow-v24 g-pa-30">
+                            <header class="g-mb-20">
+                                <h3 class="text-uppercase g-font-weight-700 g-font-size-14 mb-0">
+                                    <a class="g-theme-color-blue-dark-v2 g-color-primary--hover" href="https://medium.com/space10/space10-open-sources-the-growroom-aa7ca6621715">SPACE10 open sources The Growroom</a>
+                                </h3>
+                            </header>
+
+                            <p class="g-mb-30">The design for The Growroom, an urban farm pavilion that looks into how cities can feed themselves through food producing architecture, is now open source and available for anyone to use.</p>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+@endsection
+
+@section('script')
+    <script src="{{ asset('web/plugins/dzsparallaxer/dzsparallaxer.js') }}"></script>
+    <script src="{{ asset('web/plugins/dzsparallaxer/dzsscroller/scroller.js') }}"></script>
+    <script src="{{ asset('web/plugins/dzsparallaxer/advancedscroller/plugin.js') }}"></script>
+
+    <script src="{{ asset('web/plugins/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{{ asset('web/plugins/masonry/dist/masonry.pkgd.min.js') }}"></script>
+
+    <script>
+        $(window).on('load', function() {
+            // initialization of masonry.js
+            $('.post').imagesLoaded().then(function () {
+                $('.post').masonry({
+                    columnWidth: '.post-sizer',
+                    itemSelector: '.post-item',
+                    percentPosition: true,
+                });
+            });
+        });
+    </script>
+@endsection
+
+@section('footer')
+    @include('web.template.footer')
+@endsection

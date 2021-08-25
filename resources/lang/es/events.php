@@ -1,0 +1,28 @@
+<?php
+
+return [
+    'title-tab' => 'Eventos',
+    'title'     => 'Eventos',
+    'sub-title' => 'Participa con nosotros',
+    'content-title__1'  => 'Aprende con nosotros',
+    'content-text__1'   => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet beatae, culpa eos eum, expedita incidunt ipsum molestias non odio similique unde vitae voluptas. Dolorem iure mollitia quo reprehenderit tenetur.',
+    'item-title-1__1'   => 'Titulo 1',
+    'item-text-1__1'    => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet beatae, culpa eos eum.',
+    'item-title-2__1'   => 'Titulo 2',
+    'item-text-2__1'    => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet beatae, culpa eos eum.',
+    'item-title-3__1'   => 'Titulo 3',
+    'item-text-3__1'    => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet beatae, culpa eos eum.',
+    'item-title-4__1'   => 'Titulo 4',
+    'item-text-4__1'    => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet beatae, culpa eos eum.',
+    'content-title__2'  => 'Aprende con nosotros',
+    'item-category-1__2' => 'Todos',
+    'item-category-2__2' => 'WebMinars',
+    'item-category-3__2' => 'Talleres',
+    'item-category-4__2' => 'Eventos',
+    'item-1__2' => 'Agromakers Bogotá 2019',
+    'item-2__2' => 'Dialogo hacia una participacion socio ambiental efectiva y acertiva',
+    'item-3__2' => 'Coronavirus desnuda crisis ambiental',
+    'item-4__2' => '4ta Revolución en el Agro',
+    'item-5__2' => 'Foro de integracion agro productiva 16 de julio 2020',
+    'item-6__2' => 'Foro de integracion agro productiva 9 de julios 2020',
+];

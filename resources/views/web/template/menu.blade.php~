@@ -1,0 +1,436 @@
+<header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance"
+        data-header-fix-moment="100">
+
+    <div class="u-header__section u-header__section--hidden u-header__section--light g-bg-white g-py-15">
+        <div class="container">
+            <div class="row flex-column flex-md-row justify-content-end align-items-center text-uppercase g-font-weight-600 g-color-black">
+                <div class="col-auto g-pos-rel g-px-15">
+                    <ul class="list-inline g-overflow-hidden g-font-size-12 g-mt-minus-10 g-mx-minus-4 mb-0">
+                        <li class="list-inline-item g-mx-4 g-mt-10">
+                            <a href="#!" id="languages-dropdown-invoker-2" class="g-color-gray-dark-v2 g-color-primary--hover g-text-underline--none--hover"
+                               aria-controls="languages-dropdown-2"
+                               aria-haspopup="true"
+                               aria-expanded="false"
+                               data-dropdown-event="hover"
+                               data-dropdown-target="#languages-dropdown-2"
+                               data-dropdown-type="css-animation"
+                               data-dropdown-duration="300"
+                               data-dropdown-hide-on-scroll="false"
+                               data-dropdown-animation-in="fadeIn"
+                               data-dropdown-animation-out="fadeOut">{{__('menu.language')}}
+                                <i class="fa fa-angle-down g-ml-3"></i>
+                            </a>
+                            <ul id="languages-dropdown-2" class="list-unstyled text-left u-shadow-v23 g-pos-abs g-left-0 g-bg-white g-width-160 g-py-20 g-pb-15 g-mt-5 g-z-index-2" aria-labelledby="languages-dropdown-invoker-2">
+                                <li>
+                                    <a class="d-flex align-items-center g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{route('set_language', 'en')}}">
+                                        <img src="{{ asset('web/img/menu/bandera-usa.svg') }}" alt="spanish" class="g-height-10">&nbsp;{{__('menu.english')}}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="d-flex align-items-center g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="{{route('set_language', 'es')}}">
+                                        <img src="{{ asset('web/img/menu/bandera-colombia.svg') }}" alt="spanish" class="g-height-10">&nbsp;{{__('menu.spanish')}}
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-inline-item g-mx-4 g-mt-10">|</li>
+                        <li class="list-inline-item g-mx-4 g-mt-10">
+                            <a href="#!" class="g-color-black g-color-primary--hover g-text-underline--none--hover">{{__('menu.register')}}</a>
+                        </li>
+                        <li class="list-inline-item g-mx-4 g-mt-10">|</li>
+                        <li class="list-inline-item g-mx-4 g-mt-10">
+                            <a href="#!" class="g-color-black g-color-primary--hover g-text-underline--none--hover">{{__('menu.login')}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="u-header__section u-header__section--light g-bg-white-opacity-0_8 g-transition-0_3 g-pb-20"
+         data-header-fix-moment-exclude="g-pb-20"
+         data-header-fix-moment-classes="u-shadow-v18 g-pb-10">
+
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container g-pos-rel">
+                <!-- Logo -->
+                <a href="{{ route('index') }}" class="js-go-to navbar-brand u-header__logo "
+                   data-type="static">
+                    <img class="g-width-350 g-height-50 u-header__logo-img u-header__logo-img--main" src="{{ asset('web/img/agroecomakers.svg') }}" alt="Logo">
+                </a>
+                <!-- End Logo -->
+
+                <div id="navBar" class="js-mega-menu collapse navbar-collapse w-100" data-mobile-scroll-hide="true">
+                    <!-- Navigation -->
+                    <div class="navbar-collapse align-items-center flex-sm-row">
+                        <ul id="js-scroll-nav" class="navbar-nav text-uppercase g-font-weight-700 g-font-size-15 g-py-20 g-py-0--lg mx-auto">
+
+                            <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mx-15--xl g-my-7 g-mb-0--lg">
+                                <a href="#bestOffers" class="nav-link" id="nav-link-5"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"
+                                   aria-controls="nav-submenu-5"
+                                >{{ __('menu.aboutus') }}</a>
+
+                                <!-- Submenu -->
+                                <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-py-7 " id="nav-submenu-5"
+                                    aria-labelledby="nav-link-4">
+                                    
+                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="{{ route('digital-cooperative') }}" target="_blank">{{ __('menu.aboutus.cooperative') }}</a></li>
+
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-5"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-5"
+                                        >{{ __('menu.productors') }}</a>
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-6"
+                                            aria-labelledby="nav-link-5">
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-6"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-6"
+                                                >{{ __('menu.productors.agroecology') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-6"
+                                                    aria-labelledby="nav-link-6">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.organicoslalulu.com/" target="_blank">{{ __('menu.productors.organic.vegetables.lalulu') }}</a></li>
+
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://docs.google.com/forms/d/e/1FAIpQLSe8g_PWSwjROq60CUrZM6k9Z3zZ0gTLSHXJ3nS1ZxkogWmKEg/viewform" target="_blank">{{ __('menu.productors.organic.vegetables.utopiabio') }}</a></li>
+                                                </ul>
+                                                <!-- End Submenu -->
+                                            </li>
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-7"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-7"
+                                                >{{ __('menu.productors.organic.vegetables') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-7"
+                                                    aria-labelledby="nav-link-7">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.organicoslalulu.com/" target="_blank">{{ __('menu.productors.organic.vegetables.lalulu') }}</a></li>
+
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://docs.google.com/forms/d/e/1FAIpQLSe8g_PWSwjROq60CUrZM6k9Z3zZ0gTLSHXJ3nS1ZxkogWmKEg/viewform" target="_blank">{{ __('menu.productors.organic.vegetables.utopiabio') }}</a></li>
+                                                </ul>
+                                                <!-- End Submenu -->
+                                            </li>
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-8"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-8"
+                                                >{{ __('menu.productors.organic.input') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-8"
+                                                    aria-labelledby="nav-link-8">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.palmixtex.com/" target="_blank">{{ __('menu.productors.organic.input.palm-mixtex') }}</a></li>
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.facebook.com/FertiorganicosLaVilla" target="_blank">{{ __('menu.productors.organic.input.fertiorganico') }}</a></li>
+                                                </ul>
+                                                <!-- End Submenu -->
+                                            </li>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-9"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-9"
+                                        >{{ __('menu.associations.ecology') }}</a>
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-9"
+                                            aria-labelledby="nav-link-9">
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.facebook.com/ECOLOMBIASF/" target="_blank">{{ __('menu.associations.ecology.ecolombiasf') }}</a></li>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-7"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-10"
+                                        >{{ __('menu.associations.producers') }}</a>
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-10"
+                                            aria-labelledby="nav-link-7">
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="" target="_blank">{{ __('menu.associations.producers.asoagrimutis') }}</a></li>
+
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-10"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-10"
+                                                >{{ __('menu.associations.producers.agroecology') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-10"
+                                                    aria-labelledby="nav-link-10">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://aracsubachoque.com/" target="_blank">{{ __('menu.associations.producers.agroecology.arac') }}</a></li>
+                                                </ul>
+                                            
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-10"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-10"
+                                                >{{ __('menu.associations.producers.coffee') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-10"
+                                                    aria-labelledby="nav-link-10">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://directorio-empresas.einforma.co/informacion-empresa/asociacion-agropecuaria-mezon-neiva" target="_blank">{{ __('menu.associations.producers.coffee.agromezon') }}</a></li>
+                                                </ul>
+
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-11"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-11"
+                                                >{{ __('menu.associations.producers.cacao') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-11"
+                                                    aria-labelledby="nav-link-11">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.corpochivor.gov.co/2018/05/18/suroriente-de-boyaca-brillo-en-la-primera-feria-de-cacao-del-departamento/" target="_blank">{{ __('menu.associations.producers.cacao.asosacam') }}</a></li>
+                                                </ul>
+
+
+
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-12"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-12"
+                                                >{{ __('menu.associations.producers.honey') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-12"
+                                                    aria-labelledby="nav-link-7">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="http://colmiel.blogspot.com.co/" target="_blank">{{ __('menu.associations.producers.honey.colmiel') }}</a></li>
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="http://asoapicol2009.blogspot.com/" target="_blank">{{ __('menu.associations.producers.honey.asoapicol') }}</a></li>
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.facebook.com/Asoapiboy/" target="_blank">{{ __('menu.associations.producers.honey.asoapiboy') }}</a></li>
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="mailto:apisucre@hotmail.com" target="_blank">{{ __('menu.associations.producers.honey.apisucre') }}</a></li>
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.facebook.com/coapihuila/" target="_blank">{{ __('menu.associations.producers.honey.coapi') }}</a></li>
+                                                </ul>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-13"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-13"
+                                        >{{ __('menu.companies') }}</a>
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-13"
+                                            aria-labelledby="nav-link-13">
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-14"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-6"
+                                                >{{ __('menu.companies.honey') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-14"
+                                                    aria-labelledby="nav-link-14">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://abejasyabejas.wordpress.com/" target="_blank">{{ __('menu.companies.honey.abejasyabejas') }}</a></li>
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://vymaps.com/CO/Apicultura-Los-Cerezos-459266/" target="_blank">{{ __('menu.companies.honey.losceresos') }}</a></li>
+                                                </ul>
+                                                <!-- End Submenu -->
+                                            </li>
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-15"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-15"
+                                                >{{ __('menu.companies.agroecologyCourses') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-15"
+                                                    aria-labelledby="nav-link-15">
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.facebook.com/agroecologico.jairomonroy" target="_blank">{{ __('menu.companies.agroecologyCourses.ElNopal') }}</a></li>
+                                                </ul>
+                                                <!-- End Submenu -->
+                                            </li>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-16"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-16"
+                                        >{{ __('menu.touristic-farm') }}</a>
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-16"
+                                            aria-labelledby="nav-link-16">
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="http://agualinda.co/galeria.html" target="_blank">{{ __('menu.touristic-farm.agualinda') }}</a></li>
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.facebook.com/Utop%C3%ADabio-205617153207983/" target="_blank">{{ __('menu.touristic-farm.utopia') }}</a></li>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+                                </ul>
+                                <!-- End Submenu -->
+                            </li>
+
+                            <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mx-15--xl g-my-7 g-mb-0--lg">
+                                <a href="#bestOffers" class="nav-link" id="nav-link-2"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"
+                                   aria-controls="nav-submenu-2"
+                                >{{ __('menu.ressources') }}</a>
+
+                                <!-- Submenu -->
+                                <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-py-7 " id="nav-submenu-2"
+                                    aria-labelledby="nav-link-2">
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-1"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-1"
+                                        >{{ __('menu.ressources.hardware') }}</a>
+
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-py-7 " id="nav-submenu-1"
+                                            aria-labelledby="nav-link-1">
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://github.com/sercami97/EstacionMeteorologica" target="_blank">{{ __('menu.ressources.hardware.climatestation') }}</a></li>
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="{{ route('hardware-production') }}">{{ __('menu.ressources.hardware.for-production') }}</a></li>
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.instagram.com/p/B7TEl2AJsL9/?igshid=1ctu6p1opl22o" target="_blank">{{ __('menu.ressources.hardware.for-selling') }}</a></li>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-2"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-2"
+                                        >{{ __('menu.ressources.software') }}</a>
+
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-py-7 " id="nav-submenu-2"
+                                            aria-labelledby="nav-link-2">
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="http://eco.agromakers.org/" target="_blank">{{ __('menu.ressources.software.eco.agromakers.app') }}</a></li>
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="http://eco.agromakers.org/" target="_blank">{{ __('menu.ressources.software.eco.agromakers.blog') }}</a></li>
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="" target="_blank">{{ __('menu.ressources.software.voice.agromakers.app') }}</a></li>
+                                            <li class="dropdown-item hs-has-sub-menu">
+                                                <a href="#bestOffers" class="nav-link" id="nav-link-3"
+                                                   aria-haspopup="true"
+                                                   aria-expanded="false"
+                                                   aria-controls="nav-submenu-3"
+                                                >{{ __('menu.other.app') }}</a>
+                                                <!-- Submenu -->
+                                                <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-3"
+                                                    aria-labelledby="nav-link-3">
+
+                                                    <li class="dropdown-item hs-has-sub-menu">
+                                                        <a href="#bestOffers" class="nav-link" id="nav-link-4"
+                                                           aria-haspopup="true"
+                                                           aria-expanded="false"
+                                                           aria-controls="nav-submenu-4"
+                                                        >{{ __('menu.other.app.ecommerce') }}</a>
+                                                        <!-- Submenu -->
+                                                        <ul class="hs-sub-menu list-unstyled g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-my-2 animated hs-reversed" id="nav-submenu-4"
+                                                            aria-labelledby="nav-link-4">
+                                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.instagram.com/fruvii_colombia/?hl=es-la" target="_blank">{{ __('menu.other.app.ecommerce.fruvii') }}</a></li>
+                                                        </ul>
+                                                    </li>
+
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="http://vroom-project.org/" target="_blank">{{ __('menu.logistic-distribution') }}</a></li>
+
+
+                                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="https://world.openfoodfacts.org/" target="_blank">{{ __('menu.qrcode-traceability') }}</a></li>
+                                                </ul>
+                                                <!-- End Submenu -->
+                                            </li>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-18"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-18"
+                                        >{{ __('menu.ressources.learning') }}</a>
+
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-py-7 " id="nav-submenu-18"
+                                            aria-labelledby="nav-link-9">
+                                        <!-- <li class="dropdown-item"><a class="nav-link g-px-0" href="https://estoesagricultura.com/fermentador-casero-para-la-realizacion-de-biofertilizantes/" target="_blank">{{ __('menu.ressources.learning.biofermentor') }}</a></li> -->
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.youtube.com/watch?v=0f43cRC6g9Q" target="_blank">{{ __('menu.ressources.learning.Ph.analysis') }}</a></li>
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://youtu.be/0f43cRC6g9Q?t=399" target="_blank">{{ __('menu.ressources.learning.soil.analysis') }}</a></li>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+
+                                    <li class="dropdown-item hs-has-sub-menu">
+                                        <a href="#bestOffers" class="nav-link" id="nav-link-18"
+                                           aria-haspopup="true"
+                                           aria-expanded="false"
+                                           aria-controls="nav-submenu-18"
+                                        >{{ __('menu.e-comerce') }}</a>
+
+                                        <!-- Submenu -->
+                                        <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-py-7 " id="nav-submenu-18"
+                                            aria-labelledby="nav-link-9">
+                                        <!-- <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.comitesalsa.co/comamossano/" target="_blank">{{ __('menu.e-comerce.comiteSalsa') }}</a></li> -->
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://www.comproagro.com/" target="_blank">{{ __('menu.e-comerce.comproAgro') }}</a></li>
+                                            <li class="dropdown-item"><a class="nav-link g-px-0" href="https://bit.ly/pedidoutopia" target="_blank">{{ __('menu.e-comerce.utopiaBio') }}</a></li>
+                                        </ul>
+                                        <!-- End Submenu -->
+                                    </li>
+
+                                </ul>
+                                <!-- End Submenu -->
+                            </li>
+
+                            <li class="nav-item hs-has-sub-menu g-mx-10--lg g-mx-15--xl g-my-7 g-mb-0--lg">
+                                <a href="#bestOffers" class="nav-link" id="nav-link-8"
+                                   aria-haspopup="true"
+                                   aria-expanded="false"
+                                   aria-controls="nav-submenu-17"
+                                >{{ __('menu.events') }}</a>
+
+                                <!-- Submenu -->
+                                <ul class="hs-sub-menu list-unstyled g-text-transform-none g-brd-top g-brd-primary g-brd-top-2 g-min-width-200 g-py-7 " id="nav-submenu-17"
+                                    aria-labelledby="nav-link-17">
+                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="#" target="_blank">{{ __('menu.agromakers.webminars') }}</a></li>
+                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="#" target="_blank">{{ __('menu.agromakers.workshops') }}</a></li>
+                                    <li class="dropdown-item"><a class="nav-link g-px-0" href="http://bogota2019.agromakers.org/" target="_blank">{{ __('menu.agromakers.event') }}</a></li>
+                                </ul>
+                                <!-- End Submenu -->
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <!-- End Navigation -->
+
+                    <!--<a class="btn btn-lg text-uppercase u-btn-primary g-font-weight-700 g-font-size-12 g-rounded-30 g-px-40 g-py-15 g-ma-5" href="#">Log in</a>
+                    <a class="btn btn-lg text-uppercase u-btn-blue g-font-weight-700 g-font-size-12 g-rounded-30 g-px-40 g-py-15 g-ma-5" href="#">Register</a>-->
+                </div>
+                <!-- Logo BioINCA-->
+                <a href="http://bioinca.org/" class="js-go-to navbar-brand u-header__logo "
+                   data-type="static" target="_blank">
+                    <img class="g-width-82 g-height-50 u-header__logo-img u-header__logo-img--main" src="{{ asset('web/img/bioinca.png') }}" alt="Logo">
+                </a>
+                <!-- End Logo -->
+
+
+                <!-- Responsive Toggle Button -->
+                <button class="navbar-toggler btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-5 g-right-0" type="button"
+                        aria-label="Toggle navigation"
+                        aria-expanded="false"
+                        aria-controls="navBar"
+                        data-toggle="collapse"
+                        data-target="#navBar">
+                <span class="hamburger hamburger--slider">
+                  <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                  </span>
+                </span>
+                </button>
+                <!-- End Responsive Toggle Button -->
+            </div>
+        </nav>
+    </div>
+</header>
